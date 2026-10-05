@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1080" height="1920" viewBox="0 0 1080 1920" role="img" aria-label="brunch and dine graphic cover">
+<defs>
+  <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#171211"/><stop offset="1" stop-color="#463026"/></linearGradient>
+  <radialGradient id="glow"><stop stop-color="#d9976d" stop-opacity=".44"/><stop offset="1" stop-color="#d9976d" stop-opacity="0"/></radialGradient>
+  <pattern id="grid" width="48" height="48" patternUnits="userSpaceOnUse"><path d="M48 0 H0 V48" fill="none" stroke="#fff" stroke-opacity=".045"/></pattern>
+</defs>
+<rect width="1080" height="1920" fill="url(#bg)"/>
+<rect width="1080" height="1920" fill="url(#grid)"/>
+<ellipse cx="780" cy="520" rx="620" ry="690" fill="url(#glow)"/>
+<circle cx="905" cy="420" r="300" fill="none" stroke="#f4f2ee" stroke-opacity=".16" stroke-width="2"/><circle cx="905" cy="420" r="220" fill="none" stroke="#f4f2ee" stroke-opacity=".13" stroke-width="2"/><path d="M100 1020 Q540 700 1120 990" fill="none" stroke="#f4f2ee" stroke-opacity=".16" stroke-width="2"/>
+<path d="M70 145 V70 H145 M935 1850 H1010 V1775" fill="none" stroke="#f4f2ee" stroke-width="3" opacity=".65"/>
+<circle cx="89" cy="236" r="6" fill="#d9976d"/>
+<text x="115" y="245" fill="#f4f2ee" opacity=".85" font-family="Arial,sans-serif" font-size="21" letter-spacing="5">FRAME PRODUCTION</text>
+<path d="M70 1020 H1010" fill="none" stroke="#f4f2ee" stroke-opacity=".22"/>
+<text x="70" y="1110" fill="#f4f2ee" font-family="Arial,sans-serif" font-weight="900" font-size="138" letter-spacing="-7">BRUNCH</text>
+<text x="70" y="1290" fill="#f4f2ee" font-family="Arial,sans-serif" font-weight="900" font-size="134" letter-spacing="-7">&amp; DINE</text>
+<path d="M70 1580 H1010" fill="none" stroke="#f4f2ee" stroke-opacity=".25"/>
+<text x="70" y="1645" fill="#f4f2ee" opacity=".85" font-family="Arial,sans-serif" font-size="22" letter-spacing="6">BRANDED / EDIT</text>
+<circle cx="993" cy="1638" r="7" fill="#d9976d"/>
+</svg>

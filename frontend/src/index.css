@@ -1,0 +1,222 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+    :root {
+        --paper-rgb: 244 242 238;
+        --lav-rgb: 238 235 245;
+        --ink-rgb: 17 17 19;
+        --mist-rgb: 85 85 92;
+        --faint-rgb: 136 136 146;
+        --signal-rgb: 200 50 43;
+        --edge-color: rgba(17, 17, 19, 0.08);
+        --background: 0 0% 100%;
+        --foreground: 0 0% 3.9%;
+        --card: 0 0% 100%;
+        --card-foreground: 0 0% 3.9%;
+        --popover: 0 0% 100%;
+        --popover-foreground: 0 0% 3.9%;
+        --primary: 0 0% 9%;
+        --primary-foreground: 0 0% 98%;
+        --secondary: 0 0% 96.1%;
+        --secondary-foreground: 0 0% 9%;
+        --muted: 0 0% 96.1%;
+        --muted-foreground: 0 0% 45.1%;
+        --accent: 0 0% 96.1%;
+        --accent-foreground: 0 0% 9%;
+        --destructive: 0 84.2% 60.2%;
+        --destructive-foreground: 0 0% 98%;
+        --border: 0 0% 89.8%;
+        --input: 0 0% 89.8%;
+        --ring: 0 0% 3.9%;
+        --chart-1: 12 76% 61%;
+        --chart-2: 173 58% 39%;
+        --chart-3: 197 37% 24%;
+        --chart-4: 43 74% 66%;
+        --chart-5: 27 87% 67%;
+        --radius: 0.5rem;
+    }
+    @layer base {
+        * { @apply border-border; }
+        body { @apply bg-background text-foreground; }
+    }
+}
+
+:root[data-theme="dark"] {
+    color-scheme: dark;
+    --paper-rgb: 20 21 24;
+    --lav-rgb: 30 29 35;
+    --ink-rgb: 244 242 238;
+    --mist-rgb: 181 181 188;
+    --faint-rgb: 151 151 162;
+    --signal-rgb: 232 86 75;
+    --edge-color: rgba(244, 242, 238, 0.16);
+    --background: 240 6% 8%;
+    --foreground: 35 21% 95%;
+}
+
+/* Film-dark sections retain their original light lettering in either mode. */
+:root[data-theme="dark"] .bg-cinema,
+:root[data-theme="dark"] .media-surface,
+:root[data-theme="dark"] [data-testid="site-nav"] {
+    --paper-rgb: 244 242 238;
+    --ink-rgb: 17 17 19;
+    --mist-rgb: 85 85 92;
+    --faint-rgb: 136 136 146;
+}
+
+:root[data-theme="dark"] [data-testid="site-nav"][data-scrolled="true"] {
+    background-color: rgba(20, 21, 24, 0.94);
+    border-color: rgba(244, 242, 238, 0.16);
+}
+
+:root[data-theme="dark"] [data-testid="site-nav"][data-scrolled="false"] {
+    --paper-rgb: 244 242 238;
+    --ink-rgb: 17 17 19;
+}
+
+[data-testid="site-nav"][data-open="true"] {
+    background-color: #0F0F11;
+    border-color: rgba(244, 242, 238, 0.16);
+    --paper-rgb: 244 242 238;
+    --ink-rgb: 17 17 19;
+}
+
+html {
+    scroll-behavior: auto;
+}
+
+body {
+    margin: 0;
+    background: rgb(var(--paper-rgb));
+    color: rgb(var(--ink-rgb));
+    font-family: "Plus Jakarta Sans", sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    overflow-x: hidden;
+}
+
+:root[lang="ka"] body,
+:root[lang="ka"] .font-display,
+:root[lang="ka"] .font-mono {
+    font-family: "Noto Sans Georgian", sans-serif;
+}
+
+:root[lang="ka"] .font-mono { letter-spacing: 0.04em; }
+:root[lang="ka"] .font-display { letter-spacing: -0.035em; }
+:root[lang="ka"] .field::placeholder { font-family: "Noto Sans Georgian", sans-serif; letter-spacing: 0.04em; }
+:root[lang="ka"] [data-testid="contact-headline"] { font-size: clamp(1.9rem, 5.3vw, 5.05rem); }
+:root[lang="ka"] [data-testid="services-headline"] { font-size: clamp(2.2rem, 6.2vw, 6.2rem); }
+
+:root[data-theme="dark"] .bg-ink:hover { background-color: #d7d5d1; }
+
+::selection {
+    background: rgb(var(--ink-rgb));
+    color: rgb(var(--paper-rgb));
+}
+
+/* ---- custom cursor: hide native on precise pointers ---- */
+@media (hover: hover) and (pointer: fine) {
+    body, a, button, [data-cursor], input, textarea, select, label {
+        cursor: none;
+    }
+}
+
+/* ---- editorial helpers ---- */
+.text-outline {
+    -webkit-text-stroke: 1px rgb(var(--ink-rgb) / 0.3);
+    color: transparent;
+}
+
+.text-outline-light {
+    -webkit-text-stroke: 1px rgba(244, 242, 238, 0.4);
+    color: transparent;
+}
+
+.grain {
+    position: fixed;
+    inset: 0;
+    z-index: 70;
+    pointer-events: none;
+    opacity: 0.05;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='160' height='160'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='2'/%3E%3C/filter%3E%3Crect width='160' height='160' filter='url(%23n)' opacity='0.6'/%3E%3C/svg%3E");
+}
+
+.marquee-track {
+    display: flex;
+    width: max-content;
+    animation: marquee 52s linear infinite;
+}
+
+.marquee-track:hover {
+    animation-play-state: paused;
+}
+
+@keyframes marquee {
+    from { transform: translateX(0); }
+    to { transform: translateX(-50%); }
+}
+
+/* ---- minimal form field ---- */
+.field {
+    width: 100%;
+    background: transparent;
+    border: 0;
+    border-bottom: 1px solid rgb(var(--ink-rgb) / 0.18);
+    padding: 14px 0;
+    font-size: 14px;
+    outline: none;
+    border-radius: 0;
+    transition: border-color 0.3s ease;
+}
+
+.field:focus {
+    border-color: rgb(var(--ink-rgb));
+}
+
+.field::placeholder {
+    color: rgb(var(--faint-rgb));
+    font-family: "JetBrains Mono", monospace;
+    font-size: 11px;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+}
+
+select.field {
+    appearance: none;
+}
+
+/* thin scrollbar */
+::-webkit-scrollbar { width: 10px; }
+::-webkit-scrollbar-track { background: rgb(var(--paper-rgb)); }
+::-webkit-scrollbar-thumb { background: #d7d4cf; border-radius: 8px; }
+::-webkit-scrollbar-thumb:hover { background: #b9b6b1; }
+
+/* ---- neon glow for the logo on dark surfaces ---- */
+@keyframes logo-glow {
+    0%, 100% {
+        filter: drop-shadow(0 0 6px rgba(244, 242, 238, 0.35)) drop-shadow(0 0 16px rgba(244, 242, 238, 0.1));
+    }
+    50% {
+        filter: drop-shadow(0 0 14px rgba(244, 242, 238, 0.65)) drop-shadow(0 0 36px rgba(244, 242, 238, 0.28));
+    }
+}
+
+.logo-glow svg {
+    animation: logo-glow 4.5s ease-in-out infinite;
+}
+
+/* light form fields for dark surfaces */
+.field-light {
+    border-bottom-color: rgba(244, 242, 238, 0.25);
+    color: #F4F2EE;
+}
+
+.field-light:focus {
+    border-color: #F4F2EE;
+}
+
+.field-light::placeholder {
+    color: rgba(244, 242, 238, 0.4);
+}

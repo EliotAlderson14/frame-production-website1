@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1080" height="1350" viewBox="0 0 1080 1350" role="img" aria-label="alex topuria graphic cover">
+<defs>
+  <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#080d12"/><stop offset="1" stop-color="#25303a"/></linearGradient>
+  <radialGradient id="glow"><stop stop-color="#d74439" stop-opacity=".44"/><stop offset="1" stop-color="#d74439" stop-opacity="0"/></radialGradient>
+  <pattern id="grid" width="48" height="48" patternUnits="userSpaceOnUse"><path d="M48 0 H0 V48" fill="none" stroke="#fff" stroke-opacity=".045"/></pattern>
+</defs>
+<rect width="1080" height="1350" fill="url(#bg)"/>
+<rect width="1080" height="1350" fill="url(#grid)"/>
+<ellipse cx="780" cy="520" rx="620" ry="690" fill="url(#glow)"/>
+<path d="M540 506 L834 676 L834 1025 L540 1195 L246 1025 L246 676 Z" fill="none" stroke="#f4f2ee" stroke-opacity=".18" stroke-width="2"/><path d="M540 574 L776 711 L776 989 L540 1126 L304 989 L304 711 Z" fill="none" stroke="#f4f2ee" stroke-opacity=".12" stroke-width="2"/><path d="M540 642 L718 745 L718 955 L540 1058 L362 955 L362 745 Z" fill="none" stroke="#f4f2ee" stroke-opacity=".10" stroke-width="2"/>
+<path d="M70 145 V70 H145 M935 1280 H1010 V1205" fill="none" stroke="#f4f2ee" stroke-width="3" opacity=".65"/>
+<circle cx="89" cy="236" r="6" fill="#d74439"/>
+<text x="115" y="245" fill="#f4f2ee" opacity=".85" font-family="Arial,sans-serif" font-size="21" letter-spacing="5">FRAME PRODUCTION</text>
+<path d="M70 750 H1010" fill="none" stroke="#f4f2ee" stroke-opacity=".22"/>
+<text x="70" y="835" fill="#f4f2ee" font-family="Arial,sans-serif" font-weight="900" font-size="170" letter-spacing="-7">ALEX</text>
+<text x="70" y="1020" fill="#f4f2ee" font-family="Arial,sans-serif" font-weight="900" font-size="172" letter-spacing="-7">TOPURIA</text>
+<path d="M70 1115 H1010" fill="none" stroke="#f4f2ee" stroke-opacity=".25"/>
+<text x="70" y="1172" fill="#f4f2ee" opacity=".85" font-family="Arial,sans-serif" font-size="22" letter-spacing="6">SPORTS / EDIT</text>
+<circle cx="993" cy="1163" r="7" fill="#d74439"/>
+</svg>

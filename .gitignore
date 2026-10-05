@@ -1,0 +1,14 @@
+generated_images/
+Pasted code.ts
+/*.png
+node_modules/
+.codex/
+deployed.html
+frame-deploy.tar.gz
+incoming/
+upload/
+frontend/.env*
+qa/
+
+# Local Netlify folder
+.netlify

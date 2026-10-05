@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1080" height="1920" viewBox="0 0 1080 1920" role="img" aria-label="mate motors graphic cover">
+<defs>
+  <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#0b0c11"/><stop offset="1" stop-color="#373037"/></linearGradient>
+  <radialGradient id="glow"><stop stop-color="#d95c45" stop-opacity=".44"/><stop offset="1" stop-color="#d95c45" stop-opacity="0"/></radialGradient>
+  <pattern id="grid" width="48" height="48" patternUnits="userSpaceOnUse"><path d="M48 0 H0 V48" fill="none" stroke="#fff" stroke-opacity=".045"/></pattern>
+</defs>
+<rect width="1080" height="1920" fill="url(#bg)"/>
+<rect width="1080" height="1920" fill="url(#grid)"/>
+<ellipse cx="780" cy="520" rx="620" ry="690" fill="url(#glow)"/>
+<path d="M-120 1240 Q540 460 1200 1240" fill="none" stroke="#f4f2ee" stroke-opacity=".2" stroke-width="2"/><path d="M-120 1160 Q540 470 1200 1160" fill="none" stroke="#f4f2ee" stroke-opacity=".13" stroke-width="2"/><path d="M-120 1080 Q540 480 1200 1080" fill="none" stroke="#f4f2ee" stroke-opacity=".09" stroke-width="2"/><path d="M180 910 L900 910" stroke="#f4f2ee" stroke-opacity=".25" stroke-width="3"/>
+<path d="M70 145 V70 H145 M935 1850 H1010 V1775" fill="none" stroke="#f4f2ee" stroke-width="3" opacity=".65"/>
+<circle cx="89" cy="236" r="6" fill="#d95c45"/>
+<text x="115" y="245" fill="#f4f2ee" opacity=".85" font-family="Arial,sans-serif" font-size="21" letter-spacing="5">FRAME PRODUCTION</text>
+<path d="M70 1020 H1010" fill="none" stroke="#f4f2ee" stroke-opacity=".22"/>
+<text x="70" y="1110" fill="#f4f2ee" font-family="Arial,sans-serif" font-weight="900" font-size="170" letter-spacing="-7">MATE</text>
+<text x="70" y="1290" fill="#f4f2ee" font-family="Arial,sans-serif" font-weight="900" font-size="172" letter-spacing="-7">MOTORS</text>
+<path d="M70 1580 H1010" fill="none" stroke="#f4f2ee" stroke-opacity=".25"/>
+<text x="70" y="1645" fill="#f4f2ee" opacity=".85" font-family="Arial,sans-serif" font-size="22" letter-spacing="6">COMMERCIAL / 02 FILMS</text>
+<circle cx="993" cy="1638" r="7" fill="#d95c45"/>
+</svg>

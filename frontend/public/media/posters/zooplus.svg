@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1080" height="1920" viewBox="0 0 1080 1920" role="img" aria-label="zooplus graphic cover">
+<defs>
+  <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#171318"/><stop offset="1" stop-color="#383033"/></linearGradient>
+  <radialGradient id="glow"><stop stop-color="#edaf5c" stop-opacity=".44"/><stop offset="1" stop-color="#edaf5c" stop-opacity="0"/></radialGradient>
+  <pattern id="grid" width="48" height="48" patternUnits="userSpaceOnUse"><path d="M48 0 H0 V48" fill="none" stroke="#fff" stroke-opacity=".045"/></pattern>
+</defs>
+<rect width="1080" height="1920" fill="url(#bg)"/>
+<rect width="1080" height="1920" fill="url(#grid)"/>
+<ellipse cx="780" cy="520" rx="620" ry="690" fill="url(#glow)"/>
+<circle cx="810" cy="340" r="72" fill="#f4f2ee" fill-opacity=".12"/><circle cx="645" cy="190" r="40" fill="#f4f2ee" fill-opacity=".1"/><circle cx="975" cy="208" r="41" fill="#f4f2ee" fill-opacity=".1"/><circle cx="690" cy="445" r="39" fill="#f4f2ee" fill-opacity=".11"/><circle cx="942" cy="465" r="38" fill="#f4f2ee" fill-opacity=".11"/><path d="M330 1050 Q510 730 810 930" fill="none" stroke="#f4f2ee" stroke-opacity=".16" stroke-width="2"/>
+<path d="M70 145 V70 H145 M935 1850 H1010 V1775" fill="none" stroke="#f4f2ee" stroke-width="3" opacity=".65"/>
+<circle cx="89" cy="236" r="6" fill="#edaf5c"/>
+<text x="115" y="245" fill="#f4f2ee" opacity=".85" font-family="Arial,sans-serif" font-size="21" letter-spacing="5">FRAME PRODUCTION</text>
+<path d="M70 1020 H1010" fill="none" stroke="#f4f2ee" stroke-opacity=".22"/>
+<text x="70" y="1110" fill="#f4f2ee" font-family="Arial,sans-serif" font-weight="900" font-size="138" letter-spacing="-7">ZOOPLUS</text>
+
+<path d="M70 1580 H1010" fill="none" stroke="#f4f2ee" stroke-opacity=".25"/>
+<text x="70" y="1645" fill="#f4f2ee" opacity=".85" font-family="Arial,sans-serif" font-size="22" letter-spacing="6">COMMERCIAL / VERTICAL</text>
+<circle cx="993" cy="1638" r="7" fill="#edaf5c"/>
+</svg>
